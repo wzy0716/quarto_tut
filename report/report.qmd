@@ -1,0 +1,12 @@
+---
+title: My Awesome Report
+format:
+  html:
+    embed-resources: true
+---
+
+Here's a report of the titantic data
+
+## Figure
+
+![](../output/fig.png)
