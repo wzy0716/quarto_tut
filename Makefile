@@ -19,6 +19,7 @@ output/coef.csv output/fig.png: code/04-analyze.R output/model.RDS
 
 docs/index.html: index.qmd output/coef.csv output/fig.png
 	quarto render
+	touch docs/.nojekyll 
 
 report:
 	make docs/index.html
