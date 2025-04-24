@@ -29,4 +29,4 @@ clean:
 	rm -f data/clean/*
 	rm -f index.html
 	rm -f *.pdf
-	rm -f docs/*
+	rm -rf docs/*
