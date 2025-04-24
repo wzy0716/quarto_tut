@@ -18,6 +18,7 @@ output/coef.csv output/fig.png: code/04-analyze.R output/model.RDS
 	Rscript code/04-analyze.R --model=output/model.RDS --output_coef=output/coef.csv --output_fig=output/fig.png
 
 docs/index.html: index.qmd output/coef.csv output/fig.png
+	cp output/fig.png docs/ 
 	quarto render
 	touch docs/.nojekyll 
 
